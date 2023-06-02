@@ -1,0 +1,91 @@
+<h3 id="design" style="text-decoration: underline; margin-left:15%; font-size:25px;">Example of our design</h3>
+<section>
+<div class="slideshow-container">
+
+	<div class="mySlides fade">
+		<div class="slidepage">1/4</div>
+		<img src="slidelivingroom.jpg" style="width:100%" alt="livingroom">
+		<div class="text"><h3>Living Room</h3></div>
+			
+	</div>
+	<div class="mySlides fade">
+		<div class="slidepage">2/4</div>
+		<img src="slidekitchen.jpg" style="width:100%" alt="kitchen">
+		<div class="text"><h3>Kitchen</h3></div>
+	</div>
+	<div class="mySlides fade">
+		<div class="slidepage">3/4</div>
+		<img src="slidebedroom.jpg" style="width:100%" alt="bedroom">
+		<div class="text"><h3>Bedroom</h3></div>
+	</div>
+	<div class="mySlides fade">
+		<div class="slidepage">4/4</div>
+		<img src="slidebathroom.jpg" style="width:100%" alt="bathroom">
+		<div class="text"><h3>Bathroom</h3></div>
+	</div>
+<a class="prev" onclick="plusSlide(-1)">&#8826;</a>
+<a class="next" onclick="plusSlide(1)">&#8827;</a>
+</div>
+<br>
+
+<div style="text-align:center">
+  <span class="dot" onclick="currentSlide(1)"></span> 
+  <span class="dot" onclick="currentSlide(2)" style="width: 15px"></span> 
+  <span class="dot" onclick="currentSlide(3)"></span> 
+  <span class="dot" onclick="currentSlide(4)"></span>
+</div>
+
+		<script>
+var slideIndex = 1;
+showSlides(slideIndex);
+
+// Next/previous controls
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+// Thumbnail image controls
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {slideIndex = 1} 
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none"; 
+  }
+  for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block"; 
+  dots[slideIndex-1].className += " active";
+}		
+		</script>
+</section>
+<aside>
+			<hr/>
+			<p>Welcome to HDec Furniture shop! a site for people looking for well designed furniture.
+			This site has been build just for those who seek for beauty and quality in furnitures.
+          		We offer furnitures for three categories, like <a href="products.html">Bathroom/Kitchen/Bedroom</a>. We hope you enjoy
+			browsing through this website as it list out all of our products with details.</p>
+			<hr/>
+			<a href="offers.html"><img src="offerlogo.jpg" width="440px;" height="400px;" alt="offer"></a>
+			<hr/>
+			<p>Please go to <a href="contactus.html">Contact Us</a> to find out our Customer Service contact number.<br/>
+			 Furthermore, for more information go to <a href="aboutus.html">About Us</a>.</p>
+			<p>Dont know how to shop in our website? <a href="howtoshop.html">How to Shop</a> will show you step by step on how to purchase our product.</p>
+			<hr/>
+</aside>
+		<footer>
+		<br/><br/><br/><br/><br/>
+			<fieldset>
+				<legend>Links</legend>
+				<p style="text-align:center;"><b><a href="home.html" >Home</a>.<a href="product.html">Product</a>.<a href="aboutus.html">About Us</a>.
+				<a href="offers.html">Offers</a>.<a href="howtoshop.html">How to Shop</a></b></p>
+			</fieldset>
+		<p> &copy; HDec Coorporations System </p>
+		</footer>

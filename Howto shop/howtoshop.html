@@ -1,0 +1,97 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+<meta content="text/html; charset=utf-8" http-equiv="Content-Type" />
+<title>Howtoshop</title>
+<style>
+*{
+ margin:0;
+ padding:0;
+ font-family:Century Gothic; }
+ header{
+	background-image:linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)), url(cart.jpg);
+	height:100vh;
+	background-size:cover;
+	background-position:center;
+}
+.main_nav
+{
+	list-style-type: none;
+	margin-top: 70px;
+	float:right;
+}
+
+.main_nav li
+{
+	display: inline-block;
+}
+
+.main_nav li a
+{
+	text-decoration: none;
+	padding: 5px 20px;
+	font-size: 30px;
+	color: #000;
+	border: 1px solid transparent;
+	transition: 1s ease;
+}
+.main li.current a{
+	background-color:#000;
+	color:#fff;  
+}
+
+.main_nav li a:hover
+{
+	background-color:#000;
+	color:#fff; 
+}
+.logo img
+{
+	width:350px;
+	height:auto;
+	float:left;
+}
+.main{
+	max-width:1200px;
+	margin:auto;
+}
+.title{
+	position: absolute;
+	top: 60%;
+	left: 50%;
+	transform: translate(-50%,-50%);
+}
+.title h1{
+	text-indent: 50px;
+  	text-align: center;
+  	letter-spacing: 3px;
+	color:#000;
+	margin-bottom:40px;
+	margin-top:40px;
+	border-bottom:2px solid #000;
+}
+</style>
+</head>
+
+<body>
+    <header>
+    <div class="logo"><img src="../homepage/logo.png"/></div>
+		<nav class="main">
+			<ul class="main_nav">
+				<li><a href="../homepage/home.html">HOME</a></li>
+				<li><a href="product.html">PRODUCT</a></li>
+				<li><a href="../abouot us/aboutus.html">ABOUT US</a></li>
+				<li><a href="offer.html">OFFER</a></li>
+				<li><a href="howtoshop.html"  class="current">HOW TO SHOP</a></li>
+			</ul>
+		</nav>
+     </header>
+		<section>
+		<div class="title"><h1>Procedure of shoping</h1>
+	    <img src="howtoshop.JPG" alt="howtoshop" class="howtoshop"/>
+        </div> 
+		</section>
+</body>
+
+</html>

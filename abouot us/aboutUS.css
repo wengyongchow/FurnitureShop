@@ -1,0 +1,100 @@
+*{
+	margin: 0;
+	padding:0;
+	font-family:Century Gothic;
+}
+.main_nav
+{
+	list-style-type: none;
+	margin-top: 60px;
+	float:right;
+}
+
+.main_nav li
+{
+	display: inline-block;
+}
+
+.main_nav li a
+{
+	text-decoration: none;
+	padding: 5px 20px;
+	font-size: 30px;
+	color: black;
+	border: 1px solid transparent;
+	transition: 1s ease;
+}
+.main li.current a{
+	background-color:#000;
+	color:#fff; 
+}
+
+.main_nav li a:hover
+{
+	background-color:#000;
+	color:#fff; 
+}
+.logo img
+{
+	width:350px;
+	height:auto;
+	float:left;
+}
+.team-section{
+	overflow:hidden;
+	text-align: center;
+	background: #34495e;
+	padding:60px;
+}
+.team-section h1{
+	text-transform: uppercase;
+	margin-bottom: 60px;
+	color: #fff;
+	font-size: 40px;
+}
+.border{
+display:block;
+margin:auto;
+width:160px;
+height:3px;
+background:#3498db;
+margin-bottom:40px;
+}
+.ps{
+	margin-bottom:40px;
+}
+.ps a{
+	display: inline-block;
+	margin:0 30px;
+	width: 160px;
+	height: 160px;
+	overflow: hidden;
+	border-radius: 50%;
+}
+.ps a img{
+	width:100%;
+	filter: grayscale(100%);
+	transition: 0.6s ease;
+}
+.ps a:hover > img{
+	filter: none;
+}
+.section{
+	width: 60px;
+	margin: auto;
+	font-size:20px;
+	color: white;
+	text-align: justify;
+	height: 0;
+	overflow: hidden;
+}
+.section:target{
+	height:auto;
+}
+.name{
+	display:block;
+	margin-bottom: 30px; 
+	text-align: center;
+	text-transform: uppercase;
+	font-size: 22px;
+}	

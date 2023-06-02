@@ -1,0 +1,58 @@
+﻿header,nav,aside,footer,section{
+	display:block;
+}
+*{
+	background-image: url(bg1.jpg);
+	background-position: absolute;
+  	background-repeat: no-repeat;
+  	background-attachment: fixed;
+	background-size: cover;
+	background-position: center;
+	margin: 1px;
+	padding: 1px;
+	font-family: "Roboto" , sans-serif;
+	color: white;
+}
+body.title
+{
+	text-align:center;
+	font-family: "Roboto" , sans-serif;
+	font-size: 40px;
+}
+img {vertical-align: middle;}
+body {font-family: Verdana, sans-serif; margin:0}
+
+section{
+	float:left;
+	width: 65%;
+}
+
+section.image img{
+	margin-left:445px;
+}
+
+.text p{	
+	margin-top:40px;
+	margin-left:-300px;
+	font: 400 50px/0.8 'Cookie', Helvetica, sans-serif;
+	color: #fff;
+	text-shadow:4px 4px 3px rgba(0,0,0,0.1); 
+}
+	
+aside{
+	display: block;
+	float:right;
+	width:33%;
+}
+
+aside a:hover{
+	color: blue;
+}
+
+footer{
+	width: 100%;
+}
+
+a:hover{
+	color:blue;
+}

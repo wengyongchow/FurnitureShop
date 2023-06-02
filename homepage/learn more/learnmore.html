@@ -1,0 +1,112 @@
+﻿<!DOCTYPE html>
+<html>
+
+<head>
+<meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+<title>Learn more</title>
+<link href="learnmorecss.css" type="text/css" rel="stylesheet" />
+<link href='http://fonts.googleapis.com/css?family=Cookie' rel='stylesheet' type='text/css'>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+
+<body>
+<div class="logo"><img src="logo.png" alt=""></div>
+<nav class="main">
+	<ul class="main_nav">
+		<li><a href="../home.html">HOME</a></li>
+		<li><a href="#">PRODUCT</a></li>
+		<li><a href="../../abouot us/aboutus.html">ABOUT US</a></li>
+		<li><a href="#">OFFER</a></li>
+		<li><a href="../../Howto shop/howtoshop.html">HOW TO SHOP</a></li>
+	</ul>
+</nav>
+<br/><br/><br/><br/><br/><br/><br/><br/>
+<h1 align="center" class="title" style="text-align:center;">Welcome to PAIKEA Furniture Shop!</h1>
+<hr/>
+<br/>
+<h3 id="desc" style="text-decoration: underline; margin-left:15%; font-size:25px;">Examples of furniture design in PAIKEA</h3>
+<br/>
+<section id="slider">
+<div class="slideshow-container">
+	<div class="mySlides fade">
+ 	 <div class="numbertext">1 / 3</div>
+  		<img src="p1.jpg" style="width:100%">
+  	<div class="txtblock">
+	<h3>Living Room</h3>
+  </div>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">2 / 3</div>
+  <img src="p2.jpg" style="width:100%">
+  <div class="txtblock">
+	<h3>Kitchen</h3>
+  </div>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">3 / 3</div>
+  <img src="p3.jpg" style="width:100%">
+  <div class="txtblock">
+	<h3>Bedroom</h3>
+  </div>
+</div>
+
+<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+<a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+</div>
+<br>
+
+<div style="text-align:center">
+  <span class="dot" onclick="currentSlide(1)"></span> 
+  <span class="dot" onclick="currentSlide(2)"></span> 
+  <span class="dot" onclick="currentSlide(3)"></span> 
+</div>
+
+<script>
+var slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {slideIndex = 1}    
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";  
+  }
+  for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " active";
+}
+</script>	
+</section>
+<aside>
+			<hr/>
+			<p>Welcome to HDec Furniture shop! a site for people looking for well designed furniture.
+			This site has been build just for those who seek for beauty and quality in furnitures.
+          		We offer furnitures for three categories, like <a href="products.html">Bathroom/Kitchen/Bedroom</a>. We hope you enjoy
+			browsing through this website as it list out all of our products with details.</p>
+			<hr/>
+			<a href="offers.html"><img src="offerlogo.jpg" width="100px;"height="200px;"/></a>
+			<hr/>
+			<p>Please go to <a href="contactus.html">Contact Us</a> to find out our Customer Service contact number.<br/>
+			 Furthermore, for more information go to <a href="aboutus.html">About Us</a>.</p>
+			<p>Dont know how to shop in our website? <a href="howtoshop.html">How to Shop</a> will show you step by step on how to purchase our product.</p>
+			<hr/>
+</aside>
+</body>
+
+</html>

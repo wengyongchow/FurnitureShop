@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+<meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+<title>About us</title>
+<style>
+*{
+	margin: 0;
+	padding: 0;
+	font-family: sans-serif; 
+}
+.main_nav
+{
+	list-style-type: none;
+	margin-top: 60px;
+	float:right;
+}
+
+.main_nav li
+{
+	display: inline-block;
+}
+
+.main_nav li a
+{
+	text-decoration: none;
+	padding: 5px 20px;
+	font-size: 30px;
+	color: black;
+	border: 1px solid transparent;
+	transition: 1s ease;
+}
+.main li.current a{
+	background-color:#000;
+	color:#fff; 
+}
+
+.main_nav li a:hover
+{
+	background-color:#000;
+	color:#fff; 
+}
+.logo img
+{
+	width:350px;
+	height:auto;
+	float:left;
+}
+.section{
+	position:absolute;
+	top:30%;
+	left:50%;
+	transform: translate(-50% ,-50%);
+}
+.team-section{
+	overflow: hidden;
+	text-align: center;
+	background: #34495e;
+	padding: 60px;
+	margin-top:300px;
+}
+.team-section h1{
+	text-transform: uppercase;
+	margin-bottom: 60px;
+	color: white;
+	font-size: 40px;
+}
+.border{
+	display: block;
+	margin: auto;
+	width: 160px;
+	height: 3px;
+	background: #3498db;
+	margin-bottom:40px;
+}
+.ps{
+	margin-bottom: 40px;
+}
+.ps a{
+	display: inline-block;
+	margin: 0 30px;
+	width: 160px;
+	height: 160px;
+	overflow: hidden;
+	border-radius: 50%;
+}
+.ps a img{
+	width: 100%;
+	filter: grayscale(100%);
+	transition: 0.6s all;
+}
+.ps a:hover > img{
+	filter: none;
+}
+.section{
+	width: 600px;
+	margin: auto;
+	font-size: 20px;
+	color: white;
+	text-align: justify;
+	height: 0;
+	overflow: hidden;
+}
+.section:target{
+	height: auto;
+}
+
+.name{
+	display: block;
+	margin-bottom: 30px;
+	text-align: center;
+	text-transform: uppercase;
+	font-size: 22px;
+}
+</style>
+</head>
+
+<body>
+
+<div class="header">
+	 <div class="logo"><img src="../homepage/logo.png" alt=""/></div>
+		<nav class="main">
+			<ul class="main_nav">
+				<li><a href="../homepage/home.html">HOME</a></li>
+				<li><a href="product.html">PRODUCT</a></li>
+				<li><a href="aboutus.html"  class="current">ABOUT US</a></li>
+				<li><a href="offer.html">OFFER</a></li>
+				<li><a href="../Howto shop/howtoshop.html">HOW TO SHOP</a></li>
+			</ul>
+		</nav> 
+</div>
+<div class="section">
+	<div class="team-section">
+	  <h1>Our Team</h1>
+	  <span class="border"></span>
+	<div class="ps">
+	<a href="#p1"><img src="person1.jpg" alt=""></a>	
+	<a href="#p2"><img src="person2.jpg" alt=""></a>	
+	<a href="#p3"><img src="person3.jpg" alt=""></a>	
+	</div>
+	
+	<div class="section" id="p1">
+	  <span class="name">Halinaaa asd </span>
+	  <span class="border"></span>
+	  <p>
+	Did you know the word ‘essay’ is derived from a Latin word ‘exagium’, which roughly translates to presenting one’s case? So essays are a short piece of writing representing one’s side of the argument or one’s experiences, stories, etc.
+	  </p>
+	</div>
+
+	<div class="section" id="p2">
+	  <span class="name">lsdukfsdug sdgfl</span>
+	  <span class="border"></span>
+	  <p>
+An essay is generally a short piece of writing outlining the writer’s perspective or story. It is often considered synonymous with a story or a paper or an article. Essays can be formal as well as informal. 
+	  </p>
+	</div>
+
+	<div class="section" id="p3">
+	  <span class="name">sldkfuyasduig assdf</span>
+	  <span class="border"></span>
+	  <p>
+	Narrative Essays: This is when the writer is narrating an incident or story through the essay. So these are in the first person. The aim when writing narrative essays is to involve the reader in them as if they were right there when it was happening. So make them as vivid and real as possible.
+	  </p>
+	</div>
+
+	</div>
+</div>
+
+
+</body>
+</html>

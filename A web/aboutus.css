@@ -1,0 +1,24 @@
+body {
+background-image:url("456.jpg");
+background-position: center;
+background-repeat: no-repeat;
+background-size: cover;
+background-position:absolute; 
+}
+
+p {
+  font-family: verdana;
+  font-size: 20px;
+}
+
+section
+{ 
+	font-family: verdana;
+	font-size: 20px;
+	color:black;
+}
+
+h1
+{
+	color: black;
+}
